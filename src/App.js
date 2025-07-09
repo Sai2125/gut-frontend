@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link, useParams, Outlet } from 'react-router-dom';
 import { Camera, Clock, Users, ShoppingCart, ChevronDown, ChevronUp, CheckCircle, Leaf, AlertTriangle } from 'lucide-react';
 
-const API_BASE_URL = 'http://127.0.0.1:8000';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:8000';
+
 
 // --- Reusable UI Components ---
 
